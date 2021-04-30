@@ -1,0 +1,32 @@
+
+<mat-button-toggle-group [(value)]="selectedValue" #group="matButtonToggleGroup" multiple=true>
+  <mat-button-toggle *ngFor="let item of toggleOptions;" (change)="selectionChanged($event)" [value]="item">{{item}}
+  </mat-button-toggle>
+  <span class="badge">{{badgeCount}}</span>
+  
+</mat-button-toggle-group>
+
+<div class="example-selected-value">Selected value: {{group.value}}</div>
+<body>
+<h1>Instructivos Agencia Digital</h1>
+<div class="contenedor">
+   
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</div>
+<br>
+<div id="myDIV">
+  <div id="content">
+    <button id="izquierdita" (click)="izquierda()"> <i class="material-icons">arrow_back_ios</i> </button>
+    <button id="derechita" (click)="derecha()"><i class="material-icons" >arrow_forward_ios</i></button>
+    <div><iframe [src]='video1' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video2' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video3' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video1' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video2' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video3' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video1' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video2' frameborder="0" allowfullscreen></iframe></div>
+    <div><iframe [src]='video3' frameborder="0" allowfullscreen></iframe></div>
+  </div>
+</div>
+</body>
